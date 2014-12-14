@@ -6,9 +6,9 @@
  
 $_Globals = array();
 
-$_Globals['Appid'] = "";
+$_Globals['Appid'] = "wx6a03bf68908f65d7";
 
-$_Globals["Secret"] = "";
+$_Globals["Secret"] = "8ee6eccd700c5bf8bd7136cb093d78fa";
  
 $_Globals['dbname'] = "localhost";
 

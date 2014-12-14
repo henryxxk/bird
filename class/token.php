@@ -27,11 +27,9 @@ class Token{
     
     protected $token = "";
     
-    protected $oauth_url = "https://open.weixin.qq.com/connect/oauth2/";
+    protected $oauth_url = "https://api.weixin.qq.com/sns/oauth2/";
     
     function __constructor($appid, $secret){
-        $this->appid = $appid;
-        $this->secret = $secret;
         
         $conf = array(
             'host' => $_Globals['host'],
@@ -42,6 +40,9 @@ class Token{
         );
         $this->db = new Mysql($conf);
         $this->curl = new CurlObj();
+        $this->params['appid'] = $appid;
+        $this->params['secret'] = $secret; 
+        
         //$this->initToken();
     }
     
